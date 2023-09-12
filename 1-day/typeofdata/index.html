@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Tipos de Datos</h1>
+            <p>
+                En JavaScript y también en otros lenguajes de programación, hay diferentes tipos de datos. Los siguientes son los tipos de datos primitivos de JavaScript: Cadenas de texto ('string'), Números, Booleanos, undefined, Null y Symbol.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <h3>Números</h3>
+            <ol>
+                <li>
+                    Enteros: Números enteros (negativos, cero y positivos) Ejemplo: ... -3, -2, -1, 0, 1, 2, 3 ...
+                </li>
+                <li>
+                    Float: Números decimales Ejemplo ... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...
+                </li>
+            </ol>
+            <h3>Cadenas de texto</h3>
+            <p>Una colección de uno o más carácteres entre comillas. Ejemplo:</p>
+            <fieldset>
+                "Asabeneh"  <br/>
+                "Finlandia" <br/>
+                'JavaScript es un hermoso lenguaje de programación'. <br/>
+                "Me encanta enseñar" <br/>
+                "Espero que estés disfrutando del primer día" <br/>
+                `También podemos crear una cadena usando un backtick`
+            </fieldset>
+            <h3>Booleanos</h3>
+            <p>true // si la luz está encendida, el valor es true <br/>
+                falso // si la luz está apagada, el valor es Falso</p>
+            <h3>Undefined</h3>
+            <p>
+                let nombre; <br/>
+                console.log(nombre); <b>No está definida, porque no está asignada a un valor todavía</b>
+            </p>
+            <button id="undefined">Haz click para probar 🔼</button>
+            <h3>Null</h3>
+            <p>
+                Null en JavaScript significa un valor vacío/nulo. <br/>
+                <b>let valorVacio = null</b>
+            </p>
+            <h3>Comprobando los tipos de datos</h3>
+            <p>
+                console.log(typeof 'Asabeneh') <b>string</b> <br/>
+                console.log(typeof 5) <b>Número</b><br/>
+                console.log(typeof true ) <b>boolean</b><br/>
+                console.log(typeof null) <b>tipo de objeto</b><br/>
+                console.log(typeof undefined) <b>undefined</b>
+                
+            </p>
+            <button id="type">Haz click para probar 🔼</button>
+            <h3>
+                Comentarios
+            </h3>
+            <p>
+                Los comentarios en JavaScript son similares a los de otros lenguajes de programación. Los comentarios son importantes para hacer tu código más legible. Hay dos maneras de comentar:
+            </p>
+            <ol>
+                <li>Comentario en una sola línea
+                    <br>
+                    <fieldset>
+                        // comentando el código mismo con un solo comentario<br>
+                        // let nombre = 'Asabeneh'; comentario de una sola línea<br>
+                        // let apellido = 'Yetayeh'; comentario de una sola línea</fieldset>
+                </li>
+                <li>
+                    Comentario multilineal
+                    <fieldset>
+                        /*<br>
+                            let ubicación = 'Helsinki';<br>
+                            let edad = 100;<br>
+                            let casado = verdadero;<br>
+                            Este es un comentario de varias líneas<br>
+                        */
+                    </fieldset>
+                </li>
+            </ol>
+            <h3>Variables</h3>
+            <p>Las variables son contenedores de datos. Las variables se utilizan para almacenar datos en una ubicación de memoria. Cuando se declara una variable, se reserva una ubicación de memoria. Cuando se asigna una variable a un valor (data), el espacio de memoria se llena con esos datos. Para declarar una variable, usamos palabras clave var, let o const. Hablaremos más sobre var, let y const en detalle en otras secciones (ámbito). Por ahora, la explicación anterior es suficiente.
+
+                Para una variable que cambia en un momento diferente, usamos let. Si los datos no cambian en absoluto, usamos const. Por ejemplo, PI, nombre del país, gravedad no cambian, y podemos usar const.
+                <ol>
+                    <li>El nombre de una variable en JavaScript no debe comenzar con un número.</li>
+                    <li>Un nombre de variable JavaScript no permite caracteres especiales excepto el signo de dólar y el guión bajo.</li>
+                    <li>Los nombres de las variables en JavaScript siguen una convención 'CamelCase'.</li>
+                    <li>El nombre de una variable no debe tener espacio entre palabras.</li>
+                    <li>Los siguientes son ejemplos válidos de variables JavaScript.</li>
+                </ol>
+                Variables válidas en JavaScript:</p>
+                <fieldset>
+                    primerNombre<br>
+                    apellido<br>
+                    país<br>
+                    ciudadCapital<br>
+                    capital<br>
+                    edad<br>
+                    estaCasado<br>
+                                    <br>
+                    nombre_de_pila<br>
+                    apellido<br>
+                    esta_casado<br>
+                    ciudad_capital<br>
+                                    <br>
+                    num1<br>
+                    num_1<br>
+                     _num_1<br>
+                    $num1<br>
+                    año2020<br>
+                    año_2020<br>
+                </fieldset>
+                <p>camelCase es convencional en JavaScript. En este material, usaremos variables de CamelCase. <br>
+
+                    Variables inválidas:</p>
+                    <fieldset>
+                        primer-nombre<br>
+                        1_numero<br>
+                        num_#_1
+                    </fieldset>
+                <p>Declaremos las variables con diferentes tipos de datos. Para declarar una variable, necesitamos usar la palabra clave let o const antes del nombre de la variable. Después del nombre de la variable, escribimos un signo igual (operador de asignación), y un valor.</p>
+                    <fieldset>
+                        # Sintaxis<br>
+                        let nombreDeLaVariable = valor
+                    </fieldset>
+                <p>Ejemplos: Variables</p>
+                <fieldset>
+                    // Declarando diferentes variables de diferentes tipos de datos<br>
+                    let nombre = 'Asabeneh' // nombre de una persona<br>
+                    let apellido = 'Yetayeh' // apellido de una persona<br>
+                    let pais = 'Finland' // país<br>
+                    let ciudad = 'Helsinki' // ciudad capital<br>
+                    let edad = 100 // edad en años<br>
+                    let estaCasado = true<br>
+                                    <br>
+                    console.log(nombre, apellido, país, ciudad, edad, estáCasado)<br>
+                                    <br>
+                                    <br>
+                    Asabeneh Yetayeh Finlandia Helsinki 100 True<br>
+                                    <br>
+                    // Declarando variables con valores numéricos<br>
+                    let edad = 100 // edad en años<br>
+                    const constante = 9,81 // gravedad terrestre en m/s2<br>
+                    const puntoDeEbullición  = 100 // punto de ebullición del agua, temperatura en oC<br>
+                    const PI = 3.14 // constante geométrica<br>
+                                    <br>
+                    console.log(gravedad, punto de ebullición, PI)<br>
+                                    <br>
+                                    <br>
+                    9.81 100 3.14<br>
+                                    <br>
+                                    <br>
+                    // Las variables también pueden ser declaradas en una línea separada por una coma<br>
+                    let nombre = 'Asabeneh', // nombre de una persona<br>
+                    trabajo = 'profesor',<br>
+                    viveEn = 'Finlandia';<br>
+                    console.log(nombre, trabajo, viveEn);<br>
+                                    
+                                    
+                    Asabeneh profesor de Finlandia
+                </fieldset>
+            </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
